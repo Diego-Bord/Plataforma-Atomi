@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#070b18" />
+  <meta name="description" content="Atomi — sua plataforma de estudos. Organize aulas, pratique questões e acompanhe sua evolução." />
+  <title>Atomi — Estude melhor. Com inteligência.</title>
+  <link rel="icon" type="image/jpeg" href="assets/atomi-icon.jpeg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand-wrap">
+        <img class="brand-icon" src="assets/atomi-icon.jpeg" alt="Símbolo Atomi" />
+        <div class="brand-copy"><span class="brand-name">atomi<span class="brand-dot">.</span></span><span class="brand-caption">ESTUDE COM INTELIGÊNCIA</span></div>
+        <button class="icon-button sidebar-close" id="sidebarClose" aria-label="Fechar menu">✕</button>
+      </div>
+
+      <div class="workspace-label">ESPAÇO DE ESTUDOS</div>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <button class="nav-item active" data-view="dashboard"><span class="nav-icon">⌂</span><span>Visão geral</span></button>
+        <button class="nav-item" data-view="courses"><span class="nav-icon">▤</span><span>Meus cursos</span><span class="nav-count">8</span></button>
+        <button class="nav-item" data-view="questions"><span class="nav-icon">☷</span><span>Banco de questões</span></button>
+        <button class="nav-item" data-view="performance"><span class="nav-icon">▥</span><span>Desempenho</span></button>
+        <button class="nav-item" data-view="flashcards"><span class="nav-icon">▧</span><span>Flashcards</span></button>
+        <button class="nav-item" data-view="planner"><span class="nav-icon">▦</span><span>Cronograma</span></button>
+      </nav>
+
+      <div class="sidebar-divider"></div>
+      <div class="workspace-label">SUA ROTINA</div>
+      <div class="sidebar-goal">
+        <div class="goal-icon">✦</div>
+        <div class="goal-copy"><strong>Meta diária</strong><span>2h de estudo</span></div>
+        <span class="goal-check">↗</span>
+        <div class="mini-progress"><span id="sidebarGoalBar"></span></div>
+      </div>
+
+      <div class="sidebar-bottom">
+        <div class="sidebar-tip"><span class="tip-spark">✧</span><p>Pequenos passos todos os dias levam a grandes conquistas.</p></div>
+        <button class="profile-mini" id="profileButton">
+          <span class="avatar">AL</span><span class="profile-text"><strong>Aluno Atomi</strong><small>Plano estudante</small></span><span class="profile-more">···</span>
+        </button>
+      </div>
+    </aside>
+
+    <div class="sidebar-scrim" id="sidebarScrim"></div>
+
+    <main class="main-area">
+      <header class="topbar">
+        <div class="topbar-left">
+          <button class="icon-button menu-toggle" id="menuToggle" aria-label="Abrir menu">☰</button>
+          <div class="breadcrumb"><span>Atomi</span><span class="crumb-slash">/</span><strong id="pageLabel">Visão geral</strong></div>
+        </div>
+        <div class="topbar-actions">
+          <label class="search-box"><span class="search-icon">⌕</span><input id="globalSearch" type="search" placeholder="Buscar matéria, aula..." autocomplete="off" /><kbd>⌘ K</kbd></label>
+          <button class="icon-button theme-toggle" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">☼</button>
+          <div class="streak-pill" title="Dias seguidos estudando"><span>♨</span><strong id="streakCount">3</strong><small>dias</small></div>
+          <button class="avatar top-avatar" id="topAvatar" aria-label="Perfil">AL</button>
+        </div>
+      </header>
+
+      <div class="page-content" id="appContent" tabindex="-1">
+        <!-- Conteúdo inserido pelo app.js -->
+      </div>
+      <footer class="footer"><span>© 2026 Atomi Educação</span><span>Feito para aprender. <b>Feito para evoluir.</b></span></footer>
+    </main>
+  </div>
+
+  <div class="toast-region" id="toastRegion" aria-live="polite" aria-atomic="true"></div>
+  <div class="modal-layer" id="modalLayer" aria-hidden="true"></div>
+  <script src="app.js"></script>
+</body>
+</html>
