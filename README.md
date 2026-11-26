@@ -13,9 +13,3 @@ Projeto estático feito com **HTML, CSS e JavaScript puro**.
 - Cronograma com criação, conclusão e remoção de tarefas.
 - Tema claro/escuro e layout adaptado para celular.
 - Progresso salvo no `localStorage` do navegador.
-
-## Observações importantes
-
-Esta é uma demonstração front-end. Não existe cadastro/login real, banco de dados, painel administrativo ou vídeos hospedados. Questões e aulas são exemplos editáveis no `app.js`. O progresso é salvo somente no navegador e dispositivo em que o site for utilizado; limpar os dados do navegador pode apagar esse progresso.
-
-As fontes do Google Fonts são opcionais. Caso o visitante esteja sem internet, o site usa fontes alternativas instaladas no sistema.
