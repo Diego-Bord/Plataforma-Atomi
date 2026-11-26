@@ -2,6 +2,7 @@
   ATOMI — demonstração de plataforma educacional.
   Projeto estático: pode ser publicado diretamente no GitHub Pages.
   Dados de progresso, tarefas e preferências ficam no localStorage do navegador.
+  É um protótipo.
 */
 
 const STORAGE_KEY = 'atomi-demo-v1';
