@@ -1,6 +1,6 @@
 # Atomi — Plataforma de estudos (projeto demonstrativo)
 
-Projeto estático feito com **HTML, CSS e JavaScript puro**, preparado para hospedagem no **GitHub Pages**.
+Projeto estático feito com **HTML, CSS e JavaScript puro**.
 
 ## O que está incluído
 
